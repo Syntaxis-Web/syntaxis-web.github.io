@@ -5,7 +5,7 @@
 <style>
 @font-face {
     font-family: "Segoe Ui";
-    src: url("/Assets/Segoe UI.ttf");
+    src: url("Assets/Segoe UI.ttf");
 }
 
 body {
@@ -105,6 +105,22 @@ body {
 	text-decoration: none;
 }
 
+.languages {
+	width: 85%;
+	display: table;
+	margin-top: 3%;
+	margin-left: 5%;
+}
+
+.row {
+	display: table-row;
+}
+
+.card {
+	text-align: center;
+	display: table-cell;
+}
+
 </style>
 </head>
 <body>
@@ -127,12 +143,39 @@ body {
 	<h1 id="header">SyntaxisCS</h1>
 	<p id="desc">Personal Student Developer Portfolio</p>
 
-	<div id="logos"><image src="Assets/Images/Github.png"><image style="padding-left:10px;"src="Assets/Images/Discord.png"height="32px"width="32px"></div>
+	<div id="logos"><a href="https://github.com/Syntaxis-Web"><image src="Assets/Images/Github.png"></a><a href="https://discord.gg/tUMCPaR"><image style="padding-left:10px;"src="Assets/Images/Discord.png"height="32px"width="32px"></a></div>
 </div>
 
 <div class="announcement">
 	<p id="aHeader">FCSBot is currently open-source!</p>
-	<p id="aBody"><a href="https://github.com/Syntaxis-Web/FCSBot">FCSBot</a> is a <a href="">Discord.js</a> bot that I am working on for my programming class for school. I have worked with Discord bots prior to this however I am getting ideas through this class and everything I do is open source for anyone to use/learn from!</p>
+	<p id="aBody"><a href="https://github.com/Syntaxis-Web/FCSBot">FCSBot</a> is a <a href="https://discord.js.org">Discord.js</a> bot that I am working on for my programming class for school. I have worked with Discord bots prior to this however I am getting ideas through this class and everything I do is open source for anyone to use/learn from!</p>
+</div>
+
+<div class="languages">
+	<div class="row">
+		<div class="card">
+			<image src="Assets/Images/html.png"width="150px"height="150px">
+		</div>
+		<div class="card">
+			<image src="Assets/Images/css.png"width="120px"height="150px">
+		</div>
+		<div class="card">
+			<image src="Assets/Images/js.png"width="150px"height="150px">
+		</div>
+	</div>
+	<br><br><br>
+	<div class="row">
+		<div class="card">
+			<image src="Assets/Images/node.png"width="150px"height="150px">
+		</div>
+		<div class="card">
+			<image src="Assets/Images/mysql.png"width="200px"height="150px">
+		</div>
+		<div class="card">
+			<image src="Assets/Images/c.png"width="150px"height="150px">
+		</div>
+	</div>
+
 </div>
 
 </body>
