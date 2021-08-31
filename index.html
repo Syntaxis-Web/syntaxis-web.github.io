@@ -9,24 +9,131 @@
 }
 
 body {
-	font-family: "Segoe Ui";
 	margin: 0;
+	color: #555555;
+	font-size: 14px;
+	font-family: "Segoe Ui";
+	background-color: #fdfdfd;
+}
+
+.topnav {
+    width: 100%;
+    overflow: hidden;
+    font-size: 17px;
+    background-color: #5F5CFF;
+}
+
+.topnav a {
+	color: white;
+    float: right;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    color: white;
+    font-weight: 500;
+}
+
+#syn {
+	float: left;
+   	color: #222222;
+   	font-size: 18px;
+   	font-weight: 500;
 }
 
 .mainheader {
+	margin-top: 6%;
 	margin-left: 5%;
+}
+
+#header {
+	color: #353535;
+	font-size: 60px;
+	margin-bottom: 0;
+	font-weight: 300;
+	display: inline-block;
+}
+
+#desc {
+	margin-top: 1%;
+	color: #c2c2c2;
+	font-size: 40px;
+	font-weight: 300;
+}
+
+#blm-banner {
+	text-align:center;
+	text-decoration: none;
+	background:#010101;
+	color:#f1f1f1;
+	padding:5px;
+	font-size:16px;
+	width:100%
+}
+
+#logos {
+	margin-top: 3%;
+	max-width: 5%;
+	background: #eee;
+	border-radius:3px;
+	padding: 5px 10px;
+	border:1px solid #c2c2c2;
+}
+
+.announcement {
+	color: #353535;
+	margin-top: 3%;
+	max-width: 85%;
+	margin-left: 5%;
+	border-radius:3px;
+	padding: 10px 20px;
+	background: #fdfae6;
+	border:1px solid #ebdbb7;
+}
+
+#aHeader {
+	font-size: 15px;
+	font-weight: 700;
+}
+
+#aBody a {
+	color: #5F5CFF;
+	text-decoration: none;
 }
 
 </style>
 </head>
 <body>
-	
-	<div class="topbar"></div>
 
-	<div class="mainheader">
-		<h1>SyntaxisCS</h1><a style="color: #5F5CFF;">Charles Stello</a>
-		<p>A personal programming portfolio</p>
-	</div>
+<!--	
+<div id="blm-banner">
+	Black Lives Matter. 
+	<br/>
+	<a>Support the Equal Justice Initiative</a>.
+</div>
+-->
+
+<div class="topnav">
+    <a id="syn">SyntaxisCS</a>
+    <a href="#">Contact</a>
+    <a href="#">Portfolio</a>
+</div>
+
+<div class="mainheader">
+	<h1 id="header">SyntaxisCS</h1>
+	<p id="desc">Personal Student Developer Portfolio</p>
+
+	<div id="logos"><image src="Assets/Images/Github.png"><image style="padding-left:10px;"src="Assets/Images/Discord.png"height="32px"width="32px"></div>
+</div>
+
+<div class="announcement">
+	<p id="aHeader">FCSBot is currently open-source!</p>
+	<p id="aBody"><a href="https://github.com/Syntaxis-Web/FCSBot">FCSBot</a> is a <a href="">Discord.js</a> bot that I am working on for my programming class for school. I have worked with Discord bots prior to this however I am getting ideas through this class and everything I do is open source for anyone to use/learn from!</p>
+</div>
 
 </body>
 </html>
