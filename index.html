@@ -24,7 +24,7 @@ body {
 }
 
 .topnav a {
-	color: white;
+	color: #fdfdfd;
     float: right;
     display: block;
     font-size: 14px;
@@ -34,14 +34,15 @@ body {
 }
 
 .topnav a:hover {
-    color: white;
+    color: #fdfdfd;
     font-weight: 500;
 }
 
 #syn {
 	float: left;
-   	color: #222222;
+   	color: #fdfdfd;
    	font-size: 18px;
+   	cursor: default;
    	font-weight: 500;
 }
 
@@ -76,8 +77,9 @@ body {
 }
 
 #logos {
-	margin-top: 3%;
 	max-width: 5%;
+	margin-top: 3%;
+	max-height: 32px;
 	background: #eee;
 	border-radius:3px;
 	padding: 5px 10px;
@@ -121,6 +123,14 @@ body {
 	display: table-cell;
 }
 
+.footer {
+	color: #fdfdfd;
+	margin-top: 3%;
+	display: block;
+	text-align: center;
+	background-color: #5F5CFF;
+}
+
 </style>
 </head>
 <body>
@@ -143,7 +153,7 @@ body {
 	<h1 id="header">SyntaxisCS</h1>
 	<p id="desc">Personal Student Developer Portfolio</p>
 
-	<div id="logos"><a href="https://github.com/Syntaxis-Web"><image src="Assets/Images/Github.png"></a><a href="https://discord.gg/tUMCPaR"><image style="padding-left:10px;"src="Assets/Images/Discord.png"height="32px"width="32px"></a></div>
+	<div id="logos"><a href="https://github.com/Syntaxis-Web"><image src="Assets/Images/Github.png"></a><a href="https://discord.gg/tUMCPaR"><image style="padding-left:10px;"src="Assets/Images/Discord.png"height="32px"width="auto"></a></div>
 </div>
 
 <div class="announcement">
@@ -175,8 +185,17 @@ body {
 			<image src="Assets/Images/c.png"width="150px"height="150px">
 		</div>
 	</div>
-
 </div>
 
+<footer class="footer">
+	<p>Created by Charles Stello</p>
+	<p>Copyright © 2021 Charles Stello</p>
+	
+	<div style="display: inline-block">
+		<iframe src="https://ghbtns.com/github-btn.html?user=syntaxis-web&type=follow"frameborder="0"scrolling="0"width="170"height="20"title="GitHub"></iframe>
+		<iframe src="https://ghbtns.com/github-btn.html?user=syntaxis-web&type=sponsor"frameborder="0"scrolling="0"width="150"height="20"title="GitHub"></iframe>
+	</div>
+
+</footer>
 </body>
 </html>
