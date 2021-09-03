@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Syntaxis - Charles Stello</title>
+<title>SyntaxisCS</title>
+<script src="https://kit.fontawesome.com/d47d09b56e.js" crossorigin="anonymous"></script>
+<!-- <link rel="stylesheet" type="text/css" href="#.css" /> -->
 <style>
 @font-face {
     font-family: "Segoe Ui";
@@ -10,25 +12,24 @@
 
 body {
 	margin: 0;
-	color: #555555;
 	font-size: 14px;
-	font-family: "Segoe Ui";
-	background-color: #fdfdfd;
+	font-family: "Segoe UI";
 }
 
 .topnav {
     width: 100%;
-    overflow: hidden;
     font-size: 17px;
+    overflow: hidden;
     background-color: #5F5CFF;
 }
 
 .topnav a {
-	color: #fdfdfd;
     float: right;
     display: block;
+    color: #fdfdfd;
     font-size: 14px;
     text-align: center;
+    font-weight: 500;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -36,14 +37,37 @@ body {
 .topnav a:hover {
     color: #fdfdfd;
     font-weight: 500;
+    background-color: #4643ff;
 }
 
 #syn {
 	float: left;
    	color: #fdfdfd;
-   	font-size: 18px;
+   	font-size: 20px;
    	cursor: default;
    	font-weight: 500;
+   	padding: 8px 12px;
+}
+
+#syn:hover {
+	color: #fdfdfd;
+    background-color: #5F5CFF;
+}
+
+#contactButton {
+	color: #f5fdf9;
+	margin-right: 1%;
+	margin-top: 4px;
+	margin-bottom: 1px;
+	font-weight: 500;
+	padding: 10px 14px;
+	border-radius: 25px;
+	background-color: #33e190;
+}
+
+#contactButton:hover {
+	color: #ffffff;
+	background-color: #2bb876;
 }
 
 .mainheader {
@@ -77,20 +101,20 @@ body {
 }
 
 #logos {
-	max-width: 5%;
 	margin-top: 3%;
-	max-height: 32px;
 	background: #eee;
 	border-radius:3px;
 	padding: 5px 10px;
+	width: fit-content;
+	text-decoration: none;
+	block-size: fit-content;
 	border:1px solid #c2c2c2;
 }
 
 .announcement {
 	color: #353535;
 	margin-top: 3%;
-	max-width: 85%;
-	margin-left: 5%;
+	max-width: 90%;
 	border-radius:3px;
 	padding: 10px 20px;
 	background: #fdfae6;
@@ -107,95 +131,38 @@ body {
 	text-decoration: none;
 }
 
-.languages {
-	width: 85%;
-	display: table;
-	margin-top: 3%;
-	margin-left: 5%;
-}
-
-.row {
-	display: table-row;
-}
-
-.card {
-	text-align: center;
-	display: table-cell;
-}
-
-.footer {
-	color: #fdfdfd;
-	margin-top: 3%;
-	display: block;
-	text-align: center;
-	background-color: #5F5CFF;
-}
-
 </style>
 </head>
 <body>
 
-<!--	
-<div id="blm-banner">
-	Black Lives Matter. 
-	<br/>
-	<a>Support the Equal Justice Initiative</a>.
-</div>
--->
+	<!--	
+	<div id="blm-banner">
+		Black Lives Matter. 
+		<br/>
+		<a>Support the Equal Justice Initiative</a>.
+	</div>
+	-->
 
-<div class="topnav">
-    <a id="syn">SyntaxisCS</a>
-    <a href="#">Contact</a>
-    <a href="#">Portfolio</a>
-</div>
+	<div class="topnav">
+		<a id="syn">SyntaxisCS</a>
+		<a href="#contact" id="contactButton">Contact Me!</a>
+		<a href="#portfolio" style="margin-right: 1%;">Portfolio</a>
+		<a href="#skill">Skills</a>
+	</div>
 
-<div class="mainheader">
+	<div class="mainheader">
 	<h1 id="header">SyntaxisCS</h1>
-	<p id="desc">Personal Student Developer Portfolio</p>
+	<p id="desc">Back-End Software Engineer</p>
 
-	<div id="logos"><a href="https://github.com/Syntaxis-Web"><image src="Assets/Images/Github.png"></a><a href="https://discord.gg/tUMCPaR"><image style="padding-left:10px;"src="Assets/Images/Discord.png"height="32px"width="auto"></a></div>
-</div>
-
-<div class="announcement">
-	<p id="aHeader">FCSBot is currently open-source!</p>
-	<p id="aBody"><a href="https://github.com/Syntaxis-Web/FCSBot">FCSBot</a> is a <a href="https://discord.js.org">Discord.js</a> bot that I am working on for my programming class for school. I have worked with Discord bots prior to this however I am getting ideas through this class and everything I do is open source for anyone to use/learn from!</p>
-</div>
-
-<div class="languages">
-	<div class="row">
-		<div class="card">
-			<image src="Assets/Images/html.png"width="150px"height="150px">
-		</div>
-		<div class="card">
-			<image src="Assets/Images/css.png"width="120px"height="150px">
-		</div>
-		<div class="card">
-			<image src="Assets/Images/js.png"width="150px"height="150px">
-		</div>
-	</div>
-	<br><br><br>
-	<div class="row">
-		<div class="card">
-			<image src="Assets/Images/node.png"width="150px"height="150px">
-		</div>
-		<div class="card">
-			<image src="Assets/Images/mysql.png"width="200px"height="150px">
-		</div>
-		<div class="card">
-			<image src="Assets/Images/c.png"width="150px"height="150px">
-		</div>
-	</div>
-</div>
-
-<footer class="footer">
-	<p>Created by Charles Stello</p>
-	<p>Copyright © 2021 Charles Stello</p>
-	
-	<div style="display: inline-block">
-		<iframe src="https://ghbtns.com/github-btn.html?user=syntaxis-web&type=follow"frameborder="0"scrolling="0"width="170"height="20"title="GitHub"></iframe>
-		<iframe src="https://ghbtns.com/github-btn.html?user=syntaxis-web&type=sponsor"frameborder="0"scrolling="0"width="150"height="20"title="GitHub"></iframe>
+	<div id="logos">
+		<a href="https://github.com/SyntaxisCS"><i class="fab fa-github fa-2x"></i></a>
+		<a href="https://discord.gg/tUMCPaR"><i style="color:#5865F2;margin-left:5px;" class="fab fa-discord fa-2x"></i></a>
 	</div>
 
-</footer>
+	<div class="announcement">
+		<p id="aHeader">FCSBot is currently open-source!</p>
+		<p id="aBody"><a href="https://github.com/SyntaxisCS/FCSBot">FCSBot</a> is a <a href="https://discord.js.org">Discord.js</a> bot that I am working on for my programming class for school. I have worked with Discord bots prior to this however I am getting ideas through this class and everything I do is open source for anyone to use/learn from!</p>
+	</div>
+
 </body>
 </html>
