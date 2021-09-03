@@ -2,8 +2,9 @@
 <html>
 <head>
 <title>SyntaxisCS</title>
+<link rel="icon" href="Assets/Images/favicon.ico" type="image/x-icon">
 <script src="https://kit.fontawesome.com/d47d09b56e.js" crossorigin="anonymous"></script>
-<!-- <link rel="stylesheet" type="text/css" href="#.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="index.css" /> -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SyntaxisCS">
 <meta property="og:title" content="Charles Stello">
@@ -18,6 +19,16 @@ body {
 	margin: 0;
 	font-size: 14px;
 	font-family: "Segoe UI";
+}
+
+#blm-banner {
+	text-align:center;
+	text-decoration: none;
+	background:#010101;
+	color:#f1f1f1;
+	padding:5px;
+	font-size:16px;
+	width:100%
 }
 
 .topnav {
@@ -94,16 +105,6 @@ body {
 	font-weight: 300;
 }
 
-#blm-banner {
-	text-align:center;
-	text-decoration: none;
-	background:#010101;
-	color:#f1f1f1;
-	padding:5px;
-	font-size:16px;
-	width:100%
-}
-
 #logos {
 	margin-top: 3%;
 	background: #eee;
@@ -135,38 +136,90 @@ body {
 	text-decoration: none;
 }
 
+.row {
+	color: #353535;
+	margin-top: 3%;
+	font-weight: 500;
+}
+
+.column {
+	width: 25%;
+	float: left;
+	padding: 5px;
+	margin-left: 5%;
+}
+
+.row:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+footer {
+	color: #fdfdfd;
+	margin-top: 2%;
+	text-align: center;
+	background-color: #5F5CFF;
+}
+
 </style>
 </head>
 <body>
 
-	<!--	
-	<div id="blm-banner">
-		Black Lives Matter. 
-		<br/>
-		<a>Support the Equal Justice Initiative</a>.
-	</div>
-	-->
+<!--	
+<div id="blm-banner">
+	Black Lives Matter. 
+	<br/>
+	<a>Support the Equal Justice Initiative</a>.
+</div>
+-->
 
-	<div class="topnav">
+<div class="topnav">
 		<a id="syn">SyntaxisCS</a>
 		<a href="#contact" id="contactButton">Contact Me!</a>
 		<a href="#portfolio" style="margin-right: 1%;">Portfolio</a>
 		<a href="#skill">Skills</a>
-	</div>
+</div>
 
-	<div class="mainheader">
+<div class="mainheader">
+	
 	<h1 id="header">SyntaxisCS</h1>
 	<p id="desc">Back-End Software Engineer</p>
 
-	<div id="logos">
-		<a href="https://github.com/SyntaxisCS"><i class="fab fa-github fa-2x"></i></a>
-		<a href="https://discord.gg/tUMCPaR"><i style="color:#5865F2;margin-left:5px;" class="fab fa-discord fa-2x"></i></a>
-	</div>
+<div id="logos">
+	<a href="https://github.com/SyntaxisCS"><i class="fab fa-github fa-2x"></i></a>
+	<a href="https://discord.gg/tUMCPaR"><i style="color:#5865F2;margin-left:5px;" class="fab fa-discord fa-2x"></i></a>
+</div>
 
-	<div class="announcement">
-		<p id="aHeader">FCSBot is currently open-source!</p>
-		<p id="aBody"><a href="https://github.com/SyntaxisCS/FCSBot">FCSBot</a> is a <a href="https://discord.js.org">Discord.js</a> bot that I am working on for my programming class for school. I have worked with Discord bots prior to this however I am getting ideas through this class and everything I do is open source for anyone to use/learn from!</p>
-	</div>
+<div class="announcement">
+	<p id="aHeader">FCSBot is currently open-source!</p>
+	<p id="aBody"><a href="https://github.com/SyntaxisCS/FCSBot">FCSBot</a> is a <a href="https://discord.js.org">Discord.js</a> bot that I am working on for my programming class for school. I have worked with Discord bots prior to this however I am getting ideas through this class and everything I do is open source for anyone to use/learn from!</p>
+</div>
+</div>
 
+<div class="row">
+  <div class="column">
+  	<h2>Discord Bots</h2>
+    <p>My favorite thing right now is making Discord Bots using Discord.js. I use node.js to accomplish this and it helps me learn, overcome challenges, and learn about many different libaries I can use in the future for many purposes. I charge $10 per bot which you can find more about here on <a href="#fiverrDiscordGig">Fiverr!</a></p>
+  </div>
+  <div class="column">
+  	<h2>Express Applications</h2>
+    <p>I have some experience in the past with making desktop applications using web technologies like HTML, CSS, and Javascript/Node.js using a library known as Express.js. I've made about 3 applications using the library as more of a test. However, I do enjoy the library a lot and hope to work with it more in the future.</p>
+  </div>
+  <div class="column">
+  	<h2>Websites</h2>
+    <p>I started my programming career with HTML and CSS making wesbites. While I have moved to prefer using Node.js and a more back-end orientented programming approach I do still know how to make websites. I was a little rusty at first but after making this website I have ironed out some of those issues and I feel confident in my skills. However, I do prefer to work on back-end with node.js</p>
+  </div>
+</div>
+
+<footer>
+	<p>Created by Charles Stello</p>
+	<p>Copyright © 2021 Charles Stello</p>
+
+	<div style="display: inline-block">
+		<iframe src="https://ghbtns.com/github-btn.html?user=syntaxiscs&type=follow"frameborder="0"scrolling="0"width="170"height="20"title="GitHub"></iframe>
+		<iframe src="https://ghbtns.com/github-btn.html?user=syntaxiscs&type=sponsor"frameborder="0"scrolling="0"width="150"height="20"title="GitHub"></iframe>
+	</div>
+</footer>
 </body>
 </html>
