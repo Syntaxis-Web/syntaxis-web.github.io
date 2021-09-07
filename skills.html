@@ -78,8 +78,11 @@ body {
   padding: 0;
   width: 15%;
   height: 100%;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: scroll;
   position: fixed;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   background-color: #353535;
 }
 
@@ -93,6 +96,10 @@ body {
 .sideBar a:hover {
   color: #fdfdfd;
   background-color: #5F5CFF;
+}
+
+.sideBar::-webkit-scrollbar {
+  display: none;
 }
 
 .profile {
@@ -124,6 +131,10 @@ body {
 	margin-bottom: 5px;
 }
 
+.skillHeaders {
+    font-size: 18px;
+}
+
 .skillContainer {
 	width: 90%;
 }
@@ -142,6 +153,28 @@ body {
 .mysql {width: 15%; background-color: #00758F;}
 .swift {width: 35%; background-color: #F05138;}
 .cSharp {width: 70%; background-color: #663399;}
+.python {width: 28%; background-color: #663399;}
+
+.mainWrapper {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-left: 15%;
+}
+
+.contentBox {
+    margin: 1%;
+    width: 38.5%;
+    float: left;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #c2c2c2;
+}
+
+.boxHeader {
+    font-size: 20px;
+}
 
 </style>
 </head>
@@ -156,7 +189,7 @@ body {
 
 <div class="sideBar">
     <div class="profile">
-    	<p style="font-size: 20px;">Charles Stello</p>
+    	<p style="font-size: 20px;margin-top:1%">Charles Stello</p>
     	<img src="Assets/Images/syntaxis.jpg" alt="Syntaxis" class="pfp"></img>
     	<p>Charleston Area, SC, USA</p>
     	<p>17 years old</p>
@@ -164,35 +197,54 @@ body {
     
     <hr id="sep">
 
-    <div class="skillBars">
-    	<p>HTML5</p>
-    	<div class="skillContainer">
-    		<div class="skills html">55%</div>
-    	</div>
-    	<p>CSS</p>
-    	<div class="skillContainer">
-    		<div class="skills css">60%</div>
-    	</div>
-    	<p>Javascript</p>
-    	<div class="skillContainer">
-    		<div class="skills js">85%</div>
-    	</div>
-    	<p>Node.js</p>
-    	<div class="skillContainer">
-    		<div class="skills node">95%</div>
-    	</div>
-    	<p>MySQL</p>
-    	<div class="skillContainer">
-    		<div class="skills mysql">10%</div>
-    	</div>
-    	<p>Swift (Learning)</p>
-    	<div class="skillContainer">
-    		<div class="skills swift">35% Done</div>
-    	</div>
-    	<p>C# (Learning)</p>
-    	<div class="skillContainer">
-    		<div class="skills cSharp">70% Done</div>
-    	</div>
+   <div class="skillBars">
+        <p>HTML5</p>
+        <div class="skillContainer">
+            <div class="skills html">55%</div>
+        </div>
+        <p>CSS</p>
+        <div class="skillContainer">
+            <div class="skills css">60%</div>
+        </div>
+        <p>Javascript</p>
+        <div class="skillContainer">
+            <div class="skills js">85%</div>
+        </div>
+        <p>Node.js</p>
+        <div class="skillContainer">
+            <div class="skills node">95%</div>
+        </div>
+        <p>MySQL</p>
+        <div class="skillContainer">
+            <div class="skills mysql">10%</div>
+        </div>
+
+    <br><hr id="sep">
+    
+    <p class="skillHeaders">Currently Learning</p>
+        <p>Python</p>
+        <div class="skillContainer">
+            <div class="skills python">0% Done</div>
+        </div>
+        <p>Swift</p>
+        <div class="skillContainer">
+            <div class="skills swift">35% Done</div>
+        </div>
+        <p>C#</p>
+        <div class="skillContainer">
+            <div class="skills cSharp">70% Done</div>
+        </div>
+    </div>
+</div>
+
+<div class="mainWrapper">
+    <div class="contentBox">
+        <p class="boxHeader">What I'm working on</p>
+        <p>Icebot Public & FCSbot, Learning Python</p>
+    </div>
+    <div class="contentBox">
+        <p class="boxHeader">Current Open-Source Project</p>
+        <a href="https://github.com/SyntaxisCS/FCSBot"><img src="https://images-ext-1.discordapp.net/external/RvccrifofKGtVBoY-YQrwEA_XP3mCrJfB01gJFOYI_M/https/opengraph.githubassets.com/1ce54c9968124f1f35e4ab3600774253f7f89bc2f9c4214e1430a8cdac9d5cf0/SyntaxisCS/FCSBot" width="100%" style="border-radius: 10px;"></a>
     </div>
 </div>
 
