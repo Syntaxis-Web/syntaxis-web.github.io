@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Services</title>
+<title>Skills</title>
 <link rel="icon" href="Assets/Images/favicon.ico" type="image/x-icon">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SyntaxisCS">
-<meta property="og:title" content="Charles Stello">
+<meta property="og:title" content="Charles Stello Skills">
 <meta property="og:image" content="https://cdn.discordapp.com/attachments/340268183061790720/883198409115316244/unknown.png">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6XM5KL8K7"></script>
 <script>
@@ -16,7 +16,6 @@
   gtag('config', 'G-X6XM5KL8K7');
 </script>
 <style>
-
 @font-face {
     font-family: "Segoe Ui";
     src: url("Assets/Segoe UI.ttf");
@@ -25,27 +24,18 @@
 body {
 	margin: 0;
 	font-size: 14px;
+    overflow: hidden;
 	font-family: "Segoe UI";
 }
 
-#blm-banner {
-	text-align:center;
-	text-decoration: none;
-	background:#010101;
-	color:#f1f1f1;
-	padding:5px;
-	font-size:16px;
-	width:100%
-}
-
-.topnav {
+.topNav {
     width: 100%;
     font-size: 17px;
     overflow: hidden;
     background-color: #5F5CFF;
 }
 
-.topnav a {
+.topNav a {
     float: right;
     display: block;
     color: #fdfdfd;
@@ -56,7 +46,7 @@ body {
     text-decoration: none;
 }
 
-.topnav a:hover {
+.topNav a:hover {
     color: #fdfdfd;
     font-weight: 500;
     background-color: #4643ff;
@@ -92,69 +82,187 @@ body {
 	background-color: #2bb876;
 }
 
-.mainheader {
-	margin-top: 6%;
+.sideBar {
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: scroll;
+  position: fixed;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  background-color: #353535;
+}
+
+.sideBar a {
+  color: #fdfdfd;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.sideBar a:hover {
+  color: #fdfdfd;
+  background-color: #5F5CFF;
+}
+
+.sideBar::-webkit-scrollbar {
+  display: none;
+}
+
+.profile {
+	color: #fdfdfd;
+	font-size: 16px;
+	text-align: center;
+}
+
+.pfp {
+  	max-width: 200px;
+  	margin-top: -5%;
+  	border-radius: 25%;
+}
+
+#sep {
+	border: 0;
+	width: 85%;
+    height: 1px;
+    text-align: center;
+    background-image: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,0.75),rgba(255,255,255,0));
+}
+
+.skillBars {
+	color: #fdfdfd;
 	margin-left: 5%;
 }
 
-#desc {
-	margin-top: 1%;
-	color: #c2c2c2;
-	font-size: 40px;
-	font-weight: 300;
+.skillBars p {
+	margin-bottom: 5px;
 }
 
-.row {
-	color: #353535;
-	margin-top: 3%;
-	font-weight: 500;
+.skillHeaders {
+    font-size: 18px;
 }
 
-.column {
-	width: 25%;
-	float: left;
-	padding: 5px;
-	margin-left: 5%;
+.skillContainer {
+	width: 90%;
 }
 
-.column a {
-	color: #5F5CFF;
-	text-decoration: none;
+.skills {
+	color: #fdfdfd;
+  	text-align: right;
+  	padding-top: 1px;
+  	padding-bottom: 1px;
 }
 
-.row:after {
-	content: "";
-	clear: both;
-	display: table;
+.html {width: 55%; background-color: #e34c26;}
+.css {width: 60%; background-color: #264de4;}
+.js {width: 85%; background-color: #f0db4f;}
+.node {width: 95%; background-color: #3c873a;}
+.mysql {width: 15%; background-color: #00758F;}
+.swift {width: 35%; background-color: #F05138;}
+.cSharp {width: 70%; background-color: #663399;}
+.python {width: 28%; background-color: #663399;}
+
+.mainWrapper {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-left: 15%;
 }
 
-#servicePricing {
-	float: right;
-	color: #c2c2c2;
-	margin-right: 5%;
+.contentBox {
+    margin: 1%;
+    width: 38.5%;
+    float: left;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #c2c2c2;
+}
+
+.boxHeader {
+    font-size: 20px;
 }
 
 </style>
 </head>
 <body>
 
-<div class="topnav">
+<div class="topNav">
 		<a id="syn" href="index.html">SyntaxisCS</a>
-		<a href="mailto:cgissell2012@gmail.com" id="contactButton">Contact Me!</a>
-		<a href="portfolio.html" style="margin-right: 1%;">Portfolio</a>
-		<a href="services.html">Services</a>
-		<a href="skills.html">Skills</a>
+        <a href="mailto:cgissell2012@gmail.com" id="contactButton">Contact Me!</a>
+        <a href="portfolio.html" style="margin-right: 1%;">Portfolio</a>
+        <a href="services.html">Services</a>
+        <a href="skills.html">Skills</a>
 </div>
 
-<div class="mainheader">
-	<p id="desc">Here are the services I am currently offering.</p>
+<div class="sideBar">
+    <div class="profile">
+    	<p style="font-size: 20px;margin-top:1%">Charles Stello</p>
+    	<img src="Assets/Images/syntaxis.jpg" alt="Syntaxis" class="pfp"></img>
+    	<p>Charleston Area, SC, USA</p>
+    	<p>17 years old</p>
+    </div>
+    
+    <hr id="sep">
+
+   <div class="skillBars">
+        <p>HTML5</p>
+        <div class="skillContainer">
+            <div class="skills html">55%</div>
+        </div>
+        <p>CSS</p>
+        <div class="skillContainer">
+            <div class="skills css">60%</div>
+        </div>
+        <p>Javascript</p>
+        <div class="skillContainer">
+            <div class="skills js">85%</div>
+        </div>
+        <p>Node.js</p>
+        <div class="skillContainer">
+            <div class="skills node">95%</div>
+        </div>
+        <p>MySQL</p>
+        <div class="skillContainer">
+            <div class="skills mysql">10%</div>
+        </div>
+
+    <br><hr id="sep">
+    
+    <p class="skillHeaders">Currently Learning</p>
+        <p>Python</p>
+        <div class="skillContainer">
+            <div class="skills python">35% Done</div>
+        </div>
+        <!--
+        <p>Swift</p>
+        <div class="skillContainer">
+            <div class="skills swift">35% Done</div>
+        </div>
+        -->
+        <!--
+        <p>C#</p>
+        <div class="skillContainer">
+            <div class="skills cSharp">70% Done</div>
+        </div>
+        -->
+    </div>
 </div>
 
-<div class="row">
-  <div class="column">
-  	<a href="https://www.fiverr.com/syntaxiscs/create-a-discord-bot-for-you"><h2>Discord Bots  <span id="servicePricing">$10</span></h2></a>
-    <p>I will create a Discord bot for you to do whatever you want with. Starting at $10 I will create a completely custom discord bot for your own purposes. I will work closely with you to completely whatever task you are trying to accomplish with your server. I work with you through Discord DMs and I will always make sure that what I am making is what you wanted. If I can't do something I will try to work with you to find a workaround. If you are interested in more details you can see this service on <a href="https://www.fiverr.com/syntaxiscs/create-a-discord-bot-for-you">Fiverr.</a> If you have any questions you can contact me through Fiverr itself or using the contact button above.</p>
-  </div>
+<div class="mainWrapper">
+    <div class="contentBox">
+        <p class="boxHeader">What I'm working on</p>
+        <p>Icebot Public Version</p>
+        <p>QuizMaster</p>
+        <p>Learning Machine Learning for personal interest</p>
+        <p>Learning Python slowly</p>
+    </div>
+    <div class="contentBox">
+        <p class="boxHeader">Current Open-Source Project</p>
+        <a href="https://github.com/SyntaxisCS/FCSBot"><img src="https://images-ext-1.discordapp.net/external/RvccrifofKGtVBoY-YQrwEA_XP3mCrJfB01gJFOYI_M/https/opengraph.githubassets.com/1ce54c9968124f1f35e4ab3600774253f7f89bc2f9c4214e1430a8cdac9d5cf0/SyntaxisCS/FCSBot" width="100%" style="border-radius: 10px;"></a>
+    </div>
 </div>
 
 </body>
