@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Icebot Tutorials</title>
+<title>Icebot Status</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <script src="https://kit.fontawesome.com/d47d09b56e.js" crossorigin="anonymous"></script>
 <!-- <link rel="stylesheet" type="text/css" href="index.css" /> -->
@@ -126,6 +126,7 @@ body {
 	font-weight: 500;
 	padding: 10px 14px;
 	border-radius: 25px;
+	text-decoration: none;
 	background-color: #5F5CFF;
 }
 
@@ -158,6 +159,7 @@ body {
 .row {
 	color: #b5b5b5;
 	margin-top: 3%;
+	cursor: default;
 	font-weight: 500;
 }
 
@@ -177,6 +179,29 @@ body {
 	content: "";
 	clear: both;
 	display: table;
+}
+
+.serverCard {
+	width: 100%;
+	padding: 10px;
+	height: fit-content;
+	border-radius: 15px;
+	background-color: #060607;
+}
+
+.serverCard img {
+	width: 30%;
+	float: left;
+	padding: 10px;
+}
+
+#serverStatus {
+	color: #33e190;
+}
+
+#serverTag {
+	float: right;
+	font-size: 10px;
 }
 
 footer {
@@ -213,40 +238,26 @@ footer a {
 </div>
 
 <div class="mainheader">	
-	<h1 id="header">Icebot</h1>
-	<p id="desc">Documentation</p>
+	<h1 id="header">Status</h1>
+	<p id="desc">Checking the status of Icebot.....</p>
+<div id="logos">
+	<a id="inviteButton" href="https://discord.com/api/oauth2/authorize?client_id=558387940137500694&permissions=8&scope=bot">Add to Server</a>
+</div>
+</div>
 
-<div class="commands">
-	<h2 id="header" style="font-size: 30px;">Commands</h2><br>
-	<h3 id="header" style="font-size: 20px;">Info</h3>
-	<ul class="row">
-  	<li>Help</li>
-  	<li>Botinfo or Info</li>
-  	<li>Ping</li>
-  	<li>Uptime</li>
-  	<li>Prefix</li>
-	</ul>  
-	<h3 id="header" style="font-size: 20px;">Fun</h3>
-	<ul class="row">
-  	<li>Coinflip</li>
-  	<li>Rockpaperscissors or rps</li>
-  	<li>Bored</li>
-  	<li>Covid19, Covid19 country (query), Covid19 state (query)</li>
-  	<li>Welcome</li>
-  	<li>Profile</li>
-  	<li>Leaderboard</li>
-	</ul>
-	<h3 id="header" style="font-size: 20px;">Moderation</h3>
-	<ul class="row">
-  	<li>Kick (@mention)</li>
-  	<li>Ban (@mention)</li>
-  	<li>Purge (#)</li>
-  	<li>Setprefix (prefix)</li>
-  	<li>Setwelcome (channel-name)</li>
-  	<li>Welcometoggle</li>
-	</ul>  
+<div class="row">
+	<div class="column">
+		<h1 style="font-weight:300">Servers</h1>
+		<div class="serverCard">
+			<span id="serverTag">MAIN</span>
+			<img id="serverImg" src="logo1.png">
+			<h1 id="serverName">Ares</h1>
+			<p id="serverStatus">Operational</p>
+			<p id="serverUptime">99.95% Uptime</p>
+		</div>
+	</div>
 </div>
-</div>
+
 
 <footer>
 	<p>Created by Charles Stello</p>
