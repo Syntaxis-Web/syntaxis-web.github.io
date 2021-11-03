@@ -27,7 +27,7 @@ body {
 	margin: 0;
 	font-size: 14px;
 	font-family: "Segoe UI";
-	background-color: #17181d;
+	background-color: #fefeff;
 }
 
 #blm-banner {
@@ -114,69 +114,52 @@ body {
 	font-weight: 300;
 }
 
-#logos {
+.docs {
+	width: 100%;
+	height: fit-content;
+}
+
+.sideBar {
+	width: 25vh;
+	height: 100%;
+	padding: 10px;
+	position: fixed;
+	color: #fdfdfd;
+	overflow-x: auto;
+  	overflow-y: scroll;
+  	scrollbar-width: none;
+  	-ms-overflow-style: none;
+	background-color: #282e35;
+	
+}
+
+.sideBar p {
+	display: block;
+	font-size: 17px;
+	margin-left: 2vh;
+	text-align: left;
+}
+
+.sideBar::-webkit-scrollbar {
+  display: none;
+}
+
+.mainBody {
+    margin: 0;
+    width: 80%;
+    height: 100%;
+    padding: 10px;
+    margin-left: 15%;
+}
+
+.command {
+	color: #fdfdfd;
 	margin-top: 3%;
-	width: fit-content;
-	text-decoration: none;
-	block-size: fit-content;
-}
-
-#inviteButton {
-	color: #f5fdf9;
-	font-weight: 500;
-	padding: 10px 14px;
-	border-radius: 25px;
-	background-color: #5F5CFF;
-}
-
-#inviteButton:hover {
-	color: #ffffff;
-	cursor: pointer;
-	background-color: #7270ff;
-}
-
-.announcement {
-	color: #353535;
-	margin-top: 3%;
-	max-width: 90%;
+	max-width: 100%;
 	border-radius:3px;
 	padding: 10px 20px;
-	background: #fdfae6;
-	border:1px solid #ebdbb7;
-}
-
-#aHeader {
-	font-size: 15px;
-	font-weight: 700;
-}
-
-#aBody a {
-	color: #5F5CFF;
-	text-decoration: none;
-}
-
-.row {
-	color: #b5b5b5;
-	margin-top: 3%;
-	font-weight: 500;
-}
-
-.column {
-	width: 25%;
-	float: left;
-	padding: 5px;
-	margin-left: 5%;
-}
-
-.column a {
-	color: #5F5CFF;
-	text-decoration: none;
-}
-
-.row:after {
-	content: "";
-	clear: both;
-	display: table;
+	background: #36393E;
+	border:1px solid #1e2023;
 }
 
 footer {
@@ -212,12 +195,57 @@ footer a {
 	<a href="status.html">Status</a>
 </div>
 
+<!--
 <div class="mainheader">	
 	<h1 id="header">Icebot</h1>
 	<p id="desc">Documentation</p>
+</div>
+-->
 
-<div class="commands">
-	<h2 id="header" style="font-size: 30px;">Commands</h2><br>
+<div class="docs">
+	<div class="sideBar">
+		<p>Description</p>
+		<p>Installation</p>
+		<p>Commands</p>
+		<!--Indented-->
+		<div style="margin-left:3.5vh">
+			<p>Info</p>
+			<p>Fun</p>
+			<p>Moderation</p>
+		</div>
+	</div>
+
+	<div class="mainBody">
+		<h1 class="header">Icebot Documentation</h1>
+		<p class="desc">Bot to combine Dyno & Mee6</p>
+	
+		<h2>Description</h2>
+		<p>Icebot is a Discord bot created by Charley/Syntaxis @ SyntaxisCS and is meant to serve as a multipurpose bot taking inspiration from commands found in <a class="highlighted">Dyno</a>. Icebot also comes packaged with a leveling system that is meant to be a more advanced leveling algorithm than <a class="highlighted">Mee6</a>.</p>
+
+		<h2>Commands</h2>
+		<h3>Info</h3>
+		<p>All commands under this category relate to retrieving information regarding Icebot</p>
+
+		<div class="docLists">
+			<p class="command">*help</p>
+			<p>Help allows users to look at the list of commands offered by Icebot in nicely serparated menus</p>
+
+			<p class="command">*botinfo OR *info</p>
+			<p>BotInfo/Info is one of many commands in Icebot that has an alias, meaning that users can type either command and it will return the same thing. Info returns an embed with bot info like it's version, creator, server hosting, uptime, etc</p>
+		
+			<p class="command">*ping</p>
+			<p>Pong! Ping is a very simple command to allow users to see bot status or latency</p>
+		
+			<p class="command">*uptime</p>
+			<p>Uptime is a command that shows the uptime in the bot, this information can also be seen in the info command but has it's own seperate command for ease of use</p>
+		
+			<p class="command">*prefix</p>
+			<p>A prefix command is a must have of any bot that allows server owners to change its prefix. Prefix is a command that can either be called with the default prefix of <a class="highlighted">*</a> or with whatever the owner has chosen. This allows a user to see what the prefix is in any server if the owner doesn't have it clearly shown</p>
+		</div>
+	</div>
+</div>
+
+<!--<h2 id="header" style="font-size: 30px;">Commands</h2><br>
 	<h3 id="header" style="font-size: 20px;">Info</h3>
 	<ul class="row">
   	<li>Help</li>
@@ -244,9 +272,7 @@ footer a {
   	<li>Setprefix (prefix)</li>
   	<li>Setwelcome (channel-name)</li>
   	<li>Welcometoggle</li>
-	</ul>  
-</div>
-</div>
+	</ul>  -->
 
 <footer>
 	<p>Created by Charles Stello</p>
