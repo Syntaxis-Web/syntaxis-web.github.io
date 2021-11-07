@@ -23,10 +23,15 @@
     src: url("Assets/Segoe UI.ttf");
 }
 
+@font-face {
+	font-family: "Webly";
+	src: url("Assets/Webly.ttf");
+}
+
 body {
 	margin: 0;
 	font-size: 14px;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Webly";
 }
 
 #blm-banner {
@@ -39,14 +44,14 @@ body {
 	width:100%
 }
 
-.topnav {
+nav {
     width: 100%;
     font-size: 17px;
     overflow: hidden;
     background-color: #5F5CFF;
 }
 
-.topnav a {
+nav a {
     float: right;
     display: block;
     color: #fdfdfd;
@@ -57,7 +62,7 @@ body {
     text-decoration: none;
 }
 
-.topnav a:hover {
+nav a:hover {
     color: #fdfdfd;
     font-weight: 500;
     background-color: #4643ff;
@@ -179,53 +184,57 @@ footer {
 </head>
 <body>
 
-<!--
-<div id="blm-banner">
-	Black Lives Matter.
-	<br/>
-	<a>Support the Equal Justice Initiative</a>.
-</div>
--->
+<header>
+	<!--
+	<div id="blm-banner">
+		Black Lives Matter.
+		<br/>
+		<a>Support the Equal Justice Initiative</a>.
+	</div>
+	-->
 
-<div class="topnav">
-	<a id="syn" href="index.html">SyntaxisCS</a>
-	<a href="mailto:cgissell2012@gmail.com" id="contactButton">Contact Me!</a>
-	<a href="portfolio.html" style="margin-right: 1%;">Portfolio</a>
-	<!--<a href="services.html">Services</a>-->
-	<a href="skills.html">Skills</a>
-	<a href="servers.html">Servers</a>
-</div>
+	<nav>
+		<a id="syn" href="index.html">SyntaxisCS</a>
+		<a href="mailto:cgissell2012@gmail.com" id="contactButton">Contact Me!</a>
+		<a href="portfolio.html" style="margin-right: 1%;">Portfolio</a>
+		<!--<a href="services.html">Services</a>-->
+		<a href="skills.html">Skills</a>
+		<a href="servers.html">Servers</a>
+	</nav>
 
-<div class="mainheader">
+	<div class="mainheader">
 	
-	<h1 id="header">SyntaxisCS</h1>
-	<p id="desc">Back-End Software Engineer</p>
+		<h1 id="header">SyntaxisCS</h1>
+		<p id="desc">Back-End Software Engineer</p>
 
-<div id="logos">
-	<a href="https://github.com/SyntaxisCS"><i class="fab fa-github fa-2x"></i></a>
-	<a href="https://discord.gg/tUMCPaR"><i style="color:#5865F2;margin-left:5px;" class="fab fa-discord fa-2x"></i></a>
-</div>
+		<div id="logos">
+			<a href="https://github.com/SyntaxisCS"><i class="fab fa-github fa-2x"></i></a>
+			<a href="https://discord.gg/tUMCPaR"><i style="color:#5865F2;margin-left:5px;" class="fab fa-discord fa-2x"></i></a>
+		</div>
 
-<div class="announcement">
-	<p id="aHeader">QuizMaster is currently under development!</p>
-	<p id="aBody"><a href="https://github.com/SyntaxisCS/QuizMaster">QuizMaster</a> is a <a href="https://discord.js.org">Discord.js</a> bot that allows teachers to create quizzes to assign to students to take directly in Discord! It is currently private during the beginning phases of development but will become open-source shortly</p>
-</div>
-</div>
+		<div class="announcement">
+			<p id="aHeader">QuizMaster is currently under development!</p>
+			<p id="aBody"><a href="https://github.com/SyntaxisCS/QuizMaster">QuizMaster</a> is a <a href="https://discord.js.org">Discord.js</a> bot that allows teachers to create quizzes to assign to students to take directly in Discord! It is currently private during the beginning phases of development but will become open-source shortly</p>
+		</div>
+	</div>
+</header>
 
-<div class="row">
-  <div class="column">
-  	<h2>Discord Bots</h2>
-    <p>My favorite thing right now is making Discord Bots using Discord.js. I use node.js to accomplish this and it helps me learn, overcome challenges, and learn about many different libaries I can use in the future for many purposes. I charge $10 per bot which you can find more about here on <a href="https://www.fiverr.com/syntaxiscs/create-a-discord-bot-for-you">Fiverr!</a></p>
-  </div>
-  <div class="column">
-  	<h2>Electron Applications</h2>
-    <p>I have some experience in the past with making desktop applications using web technologies like HTML, CSS, and Javascript/Node.js using a library known as Electron.js. I've made about 3 applications using the library as more of a test. However, I do enjoy the library a lot and hope to work with it more in the future.</p>
-  </div>
-  <div class="column">
-  	<h2>Websites</h2>
-    <p>I started my programming career with HTML and CSS making wesbites. While I have moved to prefer using Node.js and a more back-end orientented programming approach I do still know how to make websites. I was a little rusty at first but after making this website I have ironed out some of those issues and I feel confident in my skills. However, I do prefer to work on back-end with node.js</p>
-  </div>
-</div>
+<main>
+	<div class="row">
+  		<div class="column">
+  			<h2>Discord Bots</h2>
+    		<p>My favorite thing right now is making Discord Bots using Discord.js. I use node.js to accomplish this and it helps me learn, overcome challenges, and learn about many different libaries I can use in the future for many purposes. I charge $10 per bot which you can find more about here on <a href="https://www.fiverr.com/syntaxiscs/create-a-discord-bot-for-you">Fiverr!</a></p>
+  		</div>
+  		<div class="column">
+  			<h2>Electron Applications</h2>
+    		<p>I have some experience in the past with making desktop applications using web technologies like HTML, CSS, and Javascript/Node.js using a library known as Electron.js. I've made around 3 applications using the library as more of a test. However, I do enjoy the library a lot and hope to work with it more in the future.</p>
+  		</div>
+  		<div class="column">
+  			<h2>Websites</h2>
+    		<p>I started my programming career with HTML and CSS making wesbites. While I have moved to prefer using Node.js and a more back-end orientented programming approach I do still know how to make websites. I was a little rusty at first but after making this website I have ironed out some of those issues and I feel confident in my skills. However, I do prefer to work on back-end with node.js</p>
+  		</div>
+	</div>
+</main>
 
 <footer>
 	<p>Created by Charles Stello</p>

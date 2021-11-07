@@ -20,14 +20,18 @@
 <style>
 @font-face {
     font-family: "Segoe Ui";
-    src: url("https://syntaxiscs.github.io/Assets/Segoe UI.ttf");
+    src: url("Assets/Segoe UI.ttf");
+}
+
+@font-face {
+	font-family: "Webly";
+	src: url("Assets/Webly.ttf");
 }
 
 body {
 	margin: 0;
 	font-size: 14px;
-	font-family: "Segoe UI";
-	background-color: #fefeff;
+	font-family: "Segoe UI", "Webly";
 }
 
 #blm-banner {
@@ -41,8 +45,9 @@ body {
 }
 
 .topnav {
-    width: 100%;
+    width: 85%;
     font-size: 17px;
+	margin-left: 15%;
     overflow: hidden;
     background-color: #5F5CFF;
 }
@@ -120,17 +125,17 @@ body {
 }
 
 .sideBar {
-	width: 25vh;
+	width: 29vh;
 	height: 100%;
 	padding: 10px;
 	position: fixed;
+	margin-top: -6vh;
 	color: #fdfdfd;
 	overflow-x: auto;
   	overflow-y: scroll;
   	scrollbar-width: none;
   	-ms-overflow-style: none;
-	background-color: #282e35;
-	
+	background-color: #282e35;	
 }
 
 .sideBar p {
@@ -146,10 +151,10 @@ body {
 
 .mainBody {
     margin: 0;
-    width: 80%;
+    width: 75%;
     height: 100%;
     padding: 10px;
-    margin-left: 15%;
+    margin-left: 20%;
 }
 
 .command {
@@ -207,13 +212,13 @@ footer a {
 		<p>Description</p>
 		<p>Installation</p>
 		<p>Commands</p>
-		<!--Indented-->
 		<div style="margin-left:3.5vh">
 			<p>Info</p>
 			<p>Fun</p>
 			<p>Moderation</p>
 		</div>
 	</div>
+<!--Create highlighted class-->
 
 	<div class="mainBody">
 		<h1 class="header">Icebot Documentation</h1>
@@ -221,6 +226,9 @@ footer a {
 	
 		<h2>Description</h2>
 		<p>Icebot is a Discord bot created by Charley/Syntaxis @ SyntaxisCS and is meant to serve as a multipurpose bot taking inspiration from commands found in <a class="highlighted">Dyno</a>. Icebot also comes packaged with a leveling system that is meant to be a more advanced leveling algorithm than <a class="highlighted">Mee6</a>.</p>
+
+		<h2>Installation</h2>
+		<p>Icebot can be added to your server by clicking the invite button on the home page of <a href="https://icebot.syntaxiscs.com/" style="text-decoration:none;">icebot.syntaxiscs.com</a></p>
 
 		<h2>Commands</h2>
 		<h3>Info</h3>
@@ -242,37 +250,60 @@ footer a {
 			<p class="command">*prefix</p>
 			<p>A prefix command is a must have of any bot that allows server owners to change its prefix. Prefix is a command that can either be called with the default prefix of <a class="highlighted">*</a> or with whatever the owner has chosen. This allows a user to see what the prefix is in any server if the owner doesn't have it clearly shown</p>
 		</div>
+
+		<h3>Fun</h3>
+		<p>All commands under this category relate to users curing their boredom and having fun with their friends</p>
+
+		<div class="docLists">
+			<p class="command">*coinflip</p>
+			<p>Coinflip is a command to be used when you really can't decide on anything. Very simple, Heads or Tails!</p>
+
+			<p class="command">*rockpaperscissors OR *rps</p>
+			<p>Rockpaperscissors or shortened to rps is the age-old game in Discord form. At launch you can only play against the computer but plans to play against another user is planned after release</p>
+
+			<p class="command">*bored</p>
+			<p>Bored is the first command that is used to help cure your boredom. It uses an api to give you a random task to do or game to play with either yourself or up to 8 people. Try it out!</p>
+
+			<p class="command">*covid19 OR *covid19 country (query) OR *covid19 state (query)></p>
+			<p>Covid19 is a command that every wished wasn't a thing but because of the current global pandemic I have added this command to Icebot for the foreseeable future. It can be used to see global, country, or US state covid19 stats</p>
+		
+			<p class="command">*welcome</p>
+			<p>The welcome command is a command that is connected to our welcoming system. Welcome allows any user to see what their welcome card looks like without having to leave and rejoin the server. That would get annoying, right?</p>
+
+			<p class="command">*profile</p>
+			<p>Profile is a command that is connected to the leveling system. This allows a user to see what level they are as well as how far they are through the current level and how far they have until the next.</p>
+		
+			<p class="command">*leaderboard</p>
+			<p>Leaderboard allows users to see the top 10 users sorted by xp in the server</p>
+		</div>
+
+		<h3>Moderation</h3>
+		<p>The following commands are only able to be called by moderators or people with advanced permissions in servers</p>
+
+		<div class="docLists">
+			<p class="command">*kick (@mention)</p>
+			<p>Kicks the specified user. Must have the KICK MEMBERS permission</p>
+
+			<p class="command">*ban (@mention)</p>
+			<p>Bans the specified user. Must have the BAN MEMBERS permission</p>
+
+			<p class="command">*purge (#)</p>
+			<p>Allows users with the MANAGE MESSAGES permission to delete up to 100 messages at a time that were sent in the last 2 weeks. Discord API limitations unfortunatly :/</p>
+
+			<p class="command">*setprefix (prefix)</p>
+			<p>Changes the prefix that Icebot will respond to in the server. This command can only be called by admins</p>
+
+			<p class="command">*setwelcome (channel-name)</p>
+			<p>Changes the channel where Icebot will send the welcome cards for every new user. This must also be called by an admin</p>
+
+			<p class="command">*welcometoggle</p>
+			<p>Changes whether or not Icebot will welcome new members. Please insure you use the above command to make sure this works correctly. This command can only be called by admins</p>
+
+			<p class="command">*setleveling</p>
+			<p>Turns on or off the leveling system. This command can only be called by admins</p>
+		</div>
 	</div>
 </div>
-
-<!--<h2 id="header" style="font-size: 30px;">Commands</h2><br>
-	<h3 id="header" style="font-size: 20px;">Info</h3>
-	<ul class="row">
-  	<li>Help</li>
-  	<li>Botinfo or Info</li>
-  	<li>Ping</li>
-  	<li>Uptime</li>
-  	<li>Prefix</li>
-	</ul>  
-	<h3 id="header" style="font-size: 20px;">Fun</h3>
-	<ul class="row">
-  	<li>Coinflip</li>
-  	<li>Rockpaperscissors or rps</li>
-  	<li>Bored</li>
-  	<li>Covid19, Covid19 country (query), Covid19 state (query)</li>
-  	<li>Welcome</li>
-  	<li>Profile</li>
-  	<li>Leaderboard</li>
-	</ul>
-	<h3 id="header" style="font-size: 20px;">Moderation</h3>
-	<ul class="row">
-  	<li>Kick (@mention)</li>
-  	<li>Ban (@mention)</li>
-  	<li>Purge (#)</li>
-  	<li>Setprefix (prefix)</li>
-  	<li>Setwelcome (channel-name)</li>
-  	<li>Welcometoggle</li>
-	</ul>  -->
 
 <footer>
 	<p>Created by Charles Stello</p>
