@@ -26,6 +26,11 @@ body {
     border-bottom: 1px solid #ffffff;
 }
 
+.pageTitle {
+    color: #ffffff;
+    text-align: center;
+}
+
 .blockContainer {
     display: flex;
     flex-wrap: wrap;
