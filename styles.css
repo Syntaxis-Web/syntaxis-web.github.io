@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: #171b2f;
+    overscroll-behavior: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -51,7 +52,7 @@ body {
 .blockImg {
     width: 100%;
     margin: auto;
-    max-height: 275px;
+    height: 200px;
     border-radius: 7.5px;
 }
 
